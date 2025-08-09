@@ -16,11 +16,11 @@ Let's break the problem into simple blocks of concepts/code:
 
 ### Future Direction:
 The next steps look like this: 
-- Add "Remove candidate" to remove specific candidates and regenerate rankings instead of re-running the entire pipeline!
+- Add "Remove candidate" to remove specific candidates and regenerate rankings instead of re-running the entire pipeline! (done)
 - Add better cleaning and preprocessing strategies for the text inputs 
 - Use summarization tools to generate a summary for why the respective candidate would be perfect for the role 
 - The ranking currently solely depends on the embedding model - therefore a good idea would be to experiment with different embedding models! 
-- Frontend - there's always room for improvement in this! 
+- Read candidate files and names from excel file
 
 ### How to run and replicate the project in your local system? 
 Step 1: Use the requirements.txt file to ensure all the necessary libraries have been downloaded. You can do this by running the following command: 
@@ -30,6 +30,8 @@ Step 1: Use the requirements.txt file to ensure all the necessary libraries have
 Step 2: Simply run the app.py file. It will prompt you to a URL link that renders a simple gradio frontend for the project! 
 
 <code> python app.py </code>
+
+Step 3: Add a job description in the text box. Now, add a candidate name and resume and click on 'Add Candidate' to register the details (it will show up in the table below). Repeat this process until you've added all candidates information! Click on "Get results" to view the rankings! (Please bare with the wait time - currently it takes about 4-5 minutes for a medium-to-long job description and 4 1-page resumes!). If you want to remove any candidate - simply select their name from the dropdown, remove and re-calculate the rankings!
 
 
 ### Feedback
